@@ -1,0 +1,9 @@
+.base-button {
+  @extend .navigation__link;
+  font-family: inherit;
+  background-color: $primary-orange;
+  border-radius: .8rem;
+  color: #FDF5FF;
+  padding: 1.2rem 2.8rem;
+  cursor: pointer;
+}

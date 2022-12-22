@@ -1,0 +1,48 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10.5rem;
+
+  &__logo-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-text {
+    margin-left: 1.2rem;
+    color: white;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 3.3rem;
+  }
+}
+
+.navigation {
+  min-width: 43.1rem;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: rgba(255, 255, 255, 0.55);
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+}
+
+.register {
+  min-width: 20.3rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__login-btn {
+    @extend .navigation__link;
+    font-family: inherit;
+    color: rgba(255, 255, 255, 0.78);
+    cursor: pointer;
+  }
+}
