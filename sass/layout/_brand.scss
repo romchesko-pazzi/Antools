@@ -1,0 +1,26 @@
+.brand {
+  max-width: 122.4rem;
+  margin: 0 auto 20rem auto;
+  background: rgba(44, 53, 61, 0.2);
+  backdrop-filter: blur(2.5rem);
+  border-radius: 2.5rem;
+
+  &__container {
+    padding: 5.5rem 8.3rem;
+  }
+
+  &__heading {
+    margin-bottom: 5.5rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  &__companies {
+    max-width: 105.9rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
