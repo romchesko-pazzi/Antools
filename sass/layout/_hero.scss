@@ -41,13 +41,14 @@
 .search {
   display: flex;
   align-items: center;
+  position: relative;
 
   &__icon {
     fill: $primary-light;
     width: 2.4rem;
     height: 2.4rem;
     position: absolute;
-    left: 24.8rem;
+    left: 1.8rem;
     cursor: pointer;
   }
 
@@ -60,6 +61,7 @@
     padding: 2rem 1.8rem 2rem 5.5rem;
     border-radius: 1.5rem;
     margin-right: -12.3rem;
+    color: rgba(255, 255, 255, 0.38);
 
     &::placeholder {
       font-weight: 400;

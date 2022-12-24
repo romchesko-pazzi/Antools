@@ -18,8 +18,9 @@
             <li>
                 <a href="#" class="navigation__link">Home</a>
             </li>
-            <li>
+            <li class="navigation__chevron">
                 <a href="#" class="navigation__link">Categories</a>
+                <img src="img/svg/chevron.svg" alt="chevron">
             </li>
             <li>
                 <a href="#" class="navigation__link">My Collections</a>
@@ -66,6 +67,7 @@
             <img src="img/svg/Illustration.svg" alt="illustration">
         </div>
     </section>
+
     <section class="popular">
         <div class="popular__headings">
             <h2 class="popular__heading-primary">Most Popular Tools</h2>
@@ -202,6 +204,7 @@
             Load more
         </button>
     </section>
+
     <section class="brand">
         <div class="brand__container">
             <h3 class="brand__heading">Trusted more than 150+ brand</h3>
@@ -213,6 +216,7 @@
             </div>
         </div>
     </section>
+
     <section class="newcomer">
         <div class="newcomer__flexbox">
             <div class="newcomer__content-left">
@@ -304,15 +308,43 @@
             </div>
         </div>
     </section>
+
     <section class="product-manager">
-        <img class="product-manager__image" src="img/pm.png" alt="">
-        <div class="product-manager__box">
+        <div class="product-manager__main-content">
+            <div class="product-manager__chevron-left">
+                <img src="img/svg/chevron-left.svg" alt="">
+            </div>
             <div>
-                <span class="product-manager__name">Ronald Richards</span>
-                <span class="product-manager__position">Product Manager</span>
+                <img class="product-manager__image" src="img/PM.png" alt="">
+                <div class="product-manager__box">
+                    <div>
+                        <span class="product-manager__name">Ronald Richards</span>
+                        <span class="product-manager__position">Product Manager</span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="product-manager__description">
+                    Incididunt cillum do sint sint enim ullamco id deserunt mollit qui reprehenderit
+                    do.
+                    Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do
+                    deserunt
+                    Lorem magna officia incididunt consectetur amet. Sunt consectetur veniam minim
+                    ex
+                    commodo sint non. Occaecat aute officia excepteur non laboris id qui ad.
+                </p>
+            </div>
+            <div class="product-manager__chevron-right">
+                <img src="img/svg/chevron-right.svg" alt="">
             </div>
         </div>
+        <div class="ellipse">
+            <div class="ellipse__item"></div>
+            <div class="ellipse__item ellipse__item--orange"></div>
+            <div class="ellipse__item"></div>
+        </div>
     </section>
+
     <section class="join">
         <div class="join__headings">
             <h3 class="join__heading-primary">Become a contributor?</h3>
@@ -326,20 +358,36 @@
             <button class="join__button base-button">Join Us</button>
         </form>
     </section>
+
 </main>
 <footer class="footer">
     <div class="copyright">
         <div class="copyright__first-row">
             <img src="img/logo.png" alt="logo">
-            <span>antools.</span>
+            <span class="copyright__first-row-text">antools.</span>
         </div>
-        <div class="copyright__second-row">
-            <span>Copyright 2021. Antools</span>
-        </div>
-        <div class="copyright__first-row">
-            <img src="img/logo.png" alt="logo">
-            <span>antools.</span>
-        </div>
+        <span class="copyright__second-row">Copyright 2021. Antools</span>
+        <p class="copyright__third-row">
+            Antool is a web collection of information on paid or free Design and Development
+            tools
+        </p>
+    </div>
+    <div class="footer__contact">
+        <span class="footer__heading">Contact Us</span>
+        <span class="footer__text">+621987463</span>
+        <span class="footer__text">M Building, No.10 A</span>
+        <span class="footer__text">antools@awesome.com</span>
+    </div>
+    <div class="footer__categories">
+        <span class="footer__heading">Categories</span>
+        <span class="footer__text">Design</span>
+        <span class="footer__text">Development</span>
+    </div>
+    <div class="footer__company-info">
+        <span class="footer__heading">Company Info</span>
+        <span class="footer__text">About Us</span>
+        <span class="footer__text">Our Partners</span>
+        <span class="footer__text">Blog</span>
     </div>
 </footer>
 </body>

@@ -1,13 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;1,500&display=swap');
+
 .product-manager {
-  max-width: 122.4rem;
-  height: 60rem;
-  border: 1px white solid;
   margin: 0 auto 25rem auto;
-  display: flex;
+  max-width: 122.4rem;
+
+  &__main-content {
+    height: 60rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__chevron-left {
+    position: relative;
+    right: 16.7rem;
+    top: 39%;
+    height: fit-content;
+  }
+
+  &__chevron-right {
+    @extend .product-manager__chevron-left;
+    left: 16.7rem;
+  }
 
   &__image {
     height: 49.2rem;
     width: 39.9rem;
+    display: block;
   }
 
   &__box {
@@ -16,6 +35,22 @@
     border-radius: .8rem;
     width: 26.5rem;
     height: 9.1rem;
+    position: relative;
+    bottom: 11.8rem;
+    right: -13.5rem;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      height: 4.3rem;
+      width: 4.3rem;
+      border-radius: 10rem;
+      position: absolute;
+      bottom: -1.6rem;
+      right: -1.9rem;
+      background: #007ACC;
+      filter: blur(3.3rem);
+    }
 
     & > div {
       padding: 1rem 2.2rem 1.6rem 2.3rem;
@@ -39,10 +74,50 @@
   }
 
   &__description {
+    font-family: Roboto, sans-serif;
     font-weight: 400;
     font-size: 1.4rem;
     line-height: 3.0rem;
     letter-spacing: 0.015em;
     color: rgba(255, 255, 255, 0.78);
+    max-width: 39.5rem;
+    margin-left: 5.7rem;
+    margin-top: 12.8rem;
+    position: relative;
+
+    &::before {
+      content: '\201C';
+      position: absolute;
+      top: -10.4rem;
+      left: -7rem;
+      font-weight: 500;
+      font-size: 250px;
+      font-family: 'Lora', serif;
+      line-height: 320px;
+      background: linear-gradient(188.88deg, rgba(252, 252, 252, 0) 20.34%, rgba(255, 255, 255, 0.5) 155.72%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      transform: rotate(19.17deg);
+    }
+  }
+}
+
+.ellipse {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 16.8rem;
+
+  &__item {
+    content: '';
+    width: 4.4rem;
+    height: .8rem;
+    border-radius: .4rem;
+    background: $primary-light;
+
+    &--orange {
+      background: $primary-orange;
+    }
   }
 }

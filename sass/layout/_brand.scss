@@ -4,9 +4,22 @@
   background: rgba(44, 53, 61, 0.2);
   backdrop-filter: blur(2.5rem);
   border-radius: 2.5rem;
+  overflow: hidden;
 
   &__container {
     padding: 5.5rem 8.3rem;
+
+    &::before {
+      content: '';
+      height: 15.9rem;
+      width: 15.9rem;
+      border-radius: 66rem;
+      position: absolute;
+      top: -11rem;
+      left: -9.4rem;
+      background: rgba(255, 72, 66, 0.4);
+      filter: blur(3.6rem);
+    }
   }
 
   &__heading {

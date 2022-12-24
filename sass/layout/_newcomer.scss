@@ -55,10 +55,24 @@
     &--second {
       margin-bottom: 5rem;
       background: rgba(40, 48, 54, 0.6);
-      backdrop-filter: blur(25px);
-      border-radius: 15px;
+      backdrop-filter: blur(2.5rem);
+      border-radius: 1.5rem;
       position: relative;
       top: -2rem;
+      overflow: hidden;
+
+      &::before {
+        content: '';
+        height: 6.5rem;
+        width: 6.5rem;
+        border-radius: 5rem;
+        position: absolute;
+        top: -3.8rem;
+        right: -2.4rem;
+        background: rgba(255, 110, 48, 0.6);
+        filter: blur(3.4rem);
+      }
+
     }
 
     &--third {

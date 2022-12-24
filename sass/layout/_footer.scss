@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  border-top: .5px solid rgba(255, 255, 255, 0.15);
+  padding: 7rem 10rem 10rem 10rem;
+  max-width: 142rem;
+  margin: 0 auto;
+
+  &__heading {
+    @include styles-for-footer-headings;
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    @include styles-for-footer-spans;
+  }
+
+  & > div:not(:first-child) {
+    margin-right: 11.5rem;
+  }
+}
+
+.copyright {
+  max-width: 26rem;
+  margin-right: 15.6rem;
+  color: rgba(255, 255, 255, 0.55);
+
+  &__first-row {
+    @extend .header__logo-box;
+    margin-bottom: 2.7rem;
+    color: rgba(255, 255, 255, 0.9);
+
+    &-text {
+      @extend .header__logo-text;
+    }
+  }
+
+  &__second-row {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin-bottom: 2.1rem;
+    display: block;
+  }
+
+  &__third-row {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+  }
+}
