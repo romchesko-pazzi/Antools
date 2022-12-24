@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 10.5rem;
+  max-width: 122.4rem;
+  margin: 0 auto 10.5rem auto;
 
   &__logo-box {
     display: flex;
@@ -44,5 +45,9 @@
     font-family: inherit;
     color: rgba(255, 255, 255, 0.78);
     cursor: pointer;
+  }
+
+  &__signup-btn {
+    padding: 1.2rem 2.8rem;
   }
 }

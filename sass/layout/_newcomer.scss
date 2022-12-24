@@ -1,0 +1,68 @@
+.newcomer {
+  max-width: 122.4rem;
+  margin: 0 auto 20rem auto;
+
+  &__flexbox {
+    display: flex;
+  }
+
+  &__content-left {
+    max-width: 42.7rem;
+    min-height: 30rem;
+  }
+
+  &__heading {
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 130%;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 3rem;
+  }
+
+  &__description-left {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 3.0rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 6rem;
+    display: block;
+  }
+
+  &__description-right {
+    font-size: 1.4rem;
+  }
+
+  &__button {
+    padding: 1.5rem 4rem;
+  }
+
+  &__content-right {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    max-width: 28.8rem;
+    min-height: 28.4rem;
+    padding: 2.8rem 2.2rem;
+
+    &--first {
+      margin-right: 2.4rem;
+      margin-bottom: 5rem;
+    }
+
+    &--second {
+      margin-bottom: 5rem;
+      background: rgba(40, 48, 54, 0.6);
+      backdrop-filter: blur(25px);
+      border-radius: 15px;
+      position: relative;
+      top: -2rem;
+    }
+
+    &--third {
+      margin-right: 2.4rem;
+    }
+  }
+}

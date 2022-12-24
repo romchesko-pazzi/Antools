@@ -1,0 +1,48 @@
+.product-manager {
+  max-width: 122.4rem;
+  height: 60rem;
+  border: 1px white solid;
+  margin: 0 auto 25rem auto;
+  display: flex;
+
+  &__image {
+    height: 49.2rem;
+    width: 39.9rem;
+  }
+
+  &__box {
+    background: rgba(40, 48, 54, 0.2);
+    backdrop-filter: blur(2.5rem);
+    border-radius: .8rem;
+    width: 26.5rem;
+    height: 9.1rem;
+
+    & > div {
+      padding: 1rem 2.2rem 1.6rem 2.3rem;
+    }
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 2.6rem;
+    line-height: 3.9rem;
+    letter-spacing: 0.015em;
+    color: rgba(255, 253, 253, 0.78);
+    display: block;
+  }
+
+  &__position {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(255, 253, 253, 0.55);
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 3.0rem;
+    letter-spacing: 0.015em;
+    color: rgba(255, 255, 255, 0.78);
+  }
+}

@@ -1,0 +1,37 @@
+.join {
+  max-width: 55.3rem;
+  margin: 0 auto 24rem auto;
+
+  &__headings {
+    margin-bottom: 10rem;
+  }
+
+  &__heading-primary {
+    font-weight: 500;
+    font-size: 4.8rem;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+  }
+
+  &__heading-secondary {
+    @extend .join__heading-primary;
+    font-size: 1.8rem;
+    line-height: 3.0rem;
+    color: rgba(255, 255, 255, 0.55);
+    display: block;
+    padding: 0 6.3rem;
+  }
+
+  &__input {
+    @extend .search__input;
+    width: 100%;
+    padding: 2rem 1.8rem 2rem 2.5rem;
+    margin-right: -14.4rem;
+  }
+
+  &__button {
+    padding: 1.2rem 3.5rem;
+  }
+}

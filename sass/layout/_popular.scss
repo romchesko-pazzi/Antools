@@ -1,0 +1,147 @@
+.popular {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+
+  &__headings {
+    font-weight: 500;
+    margin-bottom: 9rem;
+  }
+
+  &__heading-primary {
+    font-size: 4.8rem;
+    line-height: 130%;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 2.5rem;
+  }
+
+  &__heading-secondary {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin: 0 auto;
+    max-width: 24%;
+
+    & span {
+      text-align: center;
+      display: block;
+    }
+  }
+
+  &__button {
+    font-family: inherit;
+    padding: 1.7rem 3.8rem;
+    font-weight: 500;
+    font-size: 2.0rem;
+    line-height: 3.0rem;
+    color: $primary-orange;
+    background: #1E252B;
+    border: .1rem solid rgba(255, 255, 255, 0.1);
+    border-radius: .8rem;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.tools {
+  min-width: 122.4rem;
+
+  &__flexbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+  }
+
+  &__flexbox > div:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+}
+
+.item {
+  padding: 3.3rem;
+  max-width: 39.2rem;
+  max-height: 29.4rem;
+
+  &__first-box {
+    display: flex;
+    margin-bottom: 3rem;
+
+    & img {
+      margin-right: 3rem;
+    }
+  }
+
+  &__headings {
+    display: flex;
+    flex-direction: column;
+
+    & h3 {
+      min-width: 101%;
+    }
+  }
+
+  &__heading-primary {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: rgba(255, 255, 255, 0.78);
+    margin-bottom: .3rem;
+  }
+
+  &__availability {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: rgba(255, 165, 55, 0.55);
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 3.0rem;
+    color: rgba(255, 255, 255, 0.55);
+    margin-bottom: 3rem;
+    display: block;
+  }
+
+
+  &__last-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+
+    & img {
+      padding: .7rem;
+      margin-right: 1.2rem;
+    }
+  }
+
+  &__heart-icon {
+    background: $primary-light;
+    box-shadow: 0 .5rem 1rem -.3rem rgba(18, 18, 18, 0.15);
+    border-radius: .8rem;
+  }
+
+  &__visit {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: rgba(255, 255, 255, 0.55);
+    display: block;
+    padding: .9rem 3.5rem;
+  }
+}
+
+.item--sketch {
+  background: rgba(40, 48, 54, 0.6);
+  backdrop-filter: blur(2.5rem);
+  border-radius: 1.5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  position: relative;
+  top: -2rem;
+}
